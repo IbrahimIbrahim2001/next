@@ -1,6 +1,6 @@
 import { error } from "console";
 import { notFound } from "next/navigation";
-import Post from "../../app/posts/components/post";
+import Post from "../posts/components/Post";
 
 async function getPosts() {
   await new Promise((resolve) => setInterval(resolve, 3000));
