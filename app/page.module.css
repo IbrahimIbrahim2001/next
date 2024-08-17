@@ -1,0 +1,81 @@
+.homeLayout {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 120px 0;
+  background-color: var(--main-background-color);
+  font-family: var(--font-mono);
+  color: var(--tile-start-rgb);
+}
+
+.nav {
+  width: inherit;
+  background-color: var(--main-background-color);
+  box-shadow: 0 0 3px #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+.navItem {
+  text-transform: capitalize;
+  font-weight: 700;
+  padding: 10px;
+  margin: 0 10px;
+}
+.navItem.active {
+  background-color: #f2f2f2;
+  border-radius: var(--border-radius);
+  color: var(--main-color);
+}
+
+.home {
+  padding: 20px 0;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  min-height: 50px;
+  margin: 15px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: var(--main-background-color);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: 0 0 3px #f2f2f2;
+}
+
+.home button {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #f2f2f2;
+  background-color: var(--main-background-color);
+  background-color: var(--main-background-color);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: 0 0 3px #f2f2f2;
+  border-radius: var(--border-radius);
+}
+
+/* media */
+@media only screen and (max-width: 600px) {
+  .homeLayout {
+    padding: 50px 10px 0;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .homeLayout {
+    padding: 50px 50px 0;
+  }
+}

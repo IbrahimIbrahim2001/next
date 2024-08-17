@@ -1,0 +1,133 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/page.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+.page_homeLayout__9DPzq {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 120px 0;
+  background-color: var(--main-background-color);
+  font-family: var(--font-mono);
+  color: var(--tile-start-rgb);
+}
+
+.page_nav__ijo23 {
+  width: inherit;
+  background-color: var(--main-background-color);
+  box-shadow: 0 0 3px #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+.page_navItem__qmtZO {
+  text-transform: capitalize;
+  font-weight: 700;
+  padding: 10px;
+  margin: 0 10px;
+}
+.page_navItem__qmtZO.page_active__9fwfh {
+  background-color: #f2f2f2;
+  border-radius: var(--border-radius);
+  color: var(--main-color);
+}
+
+.page_home__D7RxQ {
+  padding: 20px 0;
+}
+
+.page_title__po7na {
+  font-size: 2rem;
+  font-weight: 700;
+  min-height: 50px;
+  margin: 15px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: var(--main-background-color);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: 0 0 3px #f2f2f2;
+}
+
+.page_home__D7RxQ button {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #f2f2f2;
+  background-color: var(--main-background-color);
+  background-color: var(--main-background-color);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: 0 0 3px #f2f2f2;
+  border-radius: var(--border-radius);
+}
+
+/* media */
+@media only screen and (max-width: 600px) {
+  .page_homeLayout__9DPzq {
+    padding: 50px 10px 0;
+  }
+  .page_title__po7na {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .page_homeLayout__9DPzq {
+    padding: 50px 50px 0;
+  }
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app\\layout.jsx","import":"Inter","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: '__Inter_Fallback_1deade';
+  src: local("Arial");
+  ascent-override:90.49%;
+  descent-override:22.56%;
+  line-gap-override:0.00%;
+  size-adjust:107.06%;
+}@font-face {font-family: '__Inter_Fallback_Fallback_1deade';src: local("Arial");ascent-override: 90.49%;descent-override: 22.56%;line-gap-override: 0.00%;size-adjust: 107.06%
+}.__className_1deade {font-family: '__Inter_Fallback_1deade', '__Inter_Fallback_Fallback_1deade';font-style: normal
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+:root {
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --main-background-color: rgba(17, 25, 40, 1);
+  --main-color: rgba(17, 25, 40, 1);
+  --special-color: #4b55eb;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
