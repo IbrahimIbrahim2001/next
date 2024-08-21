@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 import styles from "./page.module.css";
 
-import NavElements from "./components/NavElements";
+import NavElements from "./_components/NavElements";
 
 export const metadata = {
   title: "First next app",
@@ -21,7 +21,7 @@ const navItems = [
   {
     id: 2,
     title: "Posts",
-    href: "/posts",
+    href: "/posts/1",
   },
 ];
 

@@ -9,7 +9,7 @@
   margin: 15px 0 0;
   padding: 10px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   background-color: var(--main-background-color);
   border-radius: var(--border-radius);
@@ -18,13 +18,14 @@
 }
 
 .posts {
-  padding: 20px 0;
+  padding: 0 0 15px;
 }
 
 .pages {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 15px 0 0 0;
 }
 
 .post {
@@ -33,7 +34,7 @@
   margin: 15px 0;
   padding: 10px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   background-color: var(--main-background-color);
   border-radius: var(--border-radius);
@@ -70,22 +71,71 @@
   animation-delay: 0.4s;
 }
 
-@keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotateZ(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotateZ(360deg);
-  }
+.error-page {
+  height: calc(100vh - 150px);
+  display: grid;
+  place-content: center;
 }
 
-@keyframes rotateccw {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(-360deg);
-  }
+.next-and-prev-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.page-number {
+  height: 35px;
+  background-color: var(--main-background-color);
+  border-radius: var(--border-radius);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: 0 0 3px #f2f2f2;
+  width: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-button,
+.nextButton,
+.prevButton {
+  height: 35px;
+
+  font-size: 10px;
+  background-color: var(--main-background-color);
+  border-radius: var(--border-radius);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: 0 0 3px #f2f2f2;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.nextButton,
+.prevButton {
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-button {
+  margin: 15px 0 0;
+  font-size: 1.5rem;
+}
+
+.error-button:hover,
+.nextButton:hover,
+.prevButton:hover {
+  background-color: #f2f2f2;
+  color: var(--main-background-color);
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  border: none;
+  box-shadow: none;
 }
 
 @keyframes spin {
@@ -113,6 +163,13 @@
   }
   87% {
     box-shadow: 0.2em -0.2em 0 0 currentcolor;
+  }
+}
+
+/* media */
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 2rem;
   }
 }
 
