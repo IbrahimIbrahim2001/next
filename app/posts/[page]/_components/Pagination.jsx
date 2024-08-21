@@ -14,13 +14,13 @@ export default function Pagination() {
   const handleNextPage = () => {
     if (parseInt(page) < 10) {
       const newPage = parseInt(page) + 1;
-      router.push(`http://localhost:3000/posts/${newPage}`);
+      router.push(`/posts/${newPage}`);
     }
   };
   const handlePrevPage = () => {
     if (parseInt(page) > 1) {
       const newPage = parseInt(page) - 1;
-      router.push(`http://localhost:3000/posts/${newPage}`);
+      router.push(`/posts/${newPage}`);
     }
   };
   return (
