@@ -1,14 +1,9 @@
 {
   "pages": {
-    "/not-found": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -16,42 +11,38 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/posts/[postId]/page": [
+    "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/posts/[postId]/page.css",
-      "static/chunks/app/posts/[postId]/page.js"
+      "static/chunks/app/not-found.js"
     ],
-    "/posts/layout": [
+    "/posts/[page]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/posts/layout.css",
-      "static/chunks/app/posts/layout.js"
+      "static/css/app/posts/[page]/page.css",
+      "static/chunks/app/posts/[page]/page.js"
     ],
-    "/posts/error": [
+    "/posts/[page]/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/posts/error.js"
+      "static/css/app/posts/[page]/layout.css",
+      "static/chunks/app/posts/[page]/layout.js"
     ],
-    "/posts/loading": [
+    "/posts/[page]/error": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/posts/loading.js"
+      "static/css/app/posts/[page]/error.css",
+      "static/chunks/app/posts/[page]/error.js"
     ],
-    "/posts/not-found": [
+    "/posts/[page]/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/posts/not-found.js"
+      "static/chunks/app/posts/[page]/loading.js"
     ],
-    "/page": [
+    "/posts/[page]/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
-    "/posts/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/posts/page.js"
+      "static/chunks/app/posts/[page]/not-found.js"
     ]
   }
 }
